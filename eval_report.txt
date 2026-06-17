@@ -1,0 +1,14 @@
+============================================================
+  TaskFlow Support Bot — Evaluation Report
+============================================================
+  Total samples:              20
+  Intent accuracy:            100.0%
+  Escalation accuracy:        100.0%
+  Autonomous resolution rate: 100.0%
+  Escalation rate:            0.0%
+  Avg latency:                2995 ms
+  Errors:                     0 (0.0%)
+============================================================
+  Per-intent accuracy:
+    faq          100.0%  (20/20)
+============================================================

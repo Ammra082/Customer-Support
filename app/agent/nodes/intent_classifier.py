@@ -12,8 +12,8 @@ logger = get_logger("agent.intent_classifier")
 INTENT_SYSTEM_PROMPT = """You are an intent classifier for TaskFlow customer support.
 
 Classify the user message into exactly ONE of these intents:
-- faq: The user is asking a general question about TaskFlow features, policies, or how-to guidance
-- action: The user wants to perform a specific account/subscription/workspace operation
+- faq: The user is asking a general question about TaskFlow features, policies, or how-to guidance. If the user asks HOW to do something, classify it as 'faq'.
+- action: The user wants to perform a specific account/subscription/workspace operation. Only classify as 'action' if the user explicitly asks YOU to do it for them right now.
 - escalate: The user is frustrated, requests a human, or the request is outside support scope
 
 Also extract the sub_intent (a short snake_case label like "check_subscription", "password_reset") and the tool_name if intent is "action".
